@@ -1,0 +1,36 @@
+name: drive_rooms_flutter
+description: FileNest responsive local server file sharing application.
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+  flutter: '>=3.38.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  app_settings: ^6.1.1
+  http: ^1.6.0
+  http_parser: ^4.1.2
+  path: ^1.9.1
+  path_provider: ^2.1.6
+  mime: ^2.1.0
+  flutter_local_notifications: 19.5.0
+  intl: ^0.20.2
+  file_picker: ^11.0.3
+  desktop_drop: ^0.6.1
+  cross_file: ^0.3.4+2
+  share_plus: 11.1.0
+  url_launcher: ^6.3.2
+  flutter_quill: ^11.4.2
+  sqflite: ^2.4.2
+  sqflite_common: ^2.5.6
+  sqflite_common_ffi: ^2.3.6
+  sqflite_common_ffi_web: ^1.2.0
+  web: ^1.1.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

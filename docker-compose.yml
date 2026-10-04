@@ -1,0 +1,25 @@
+services:
+  backend:
+    build: ./server
+    restart: unless-stopped
+    environment:
+      PORT: 3001
+      HOST: 0.0.0.0
+      DATA_DIR: /data
+      MAX_UPLOAD_BYTES: ${MAX_UPLOAD_BYTES:-104857600}
+    ports:
+      - "3001:3001"
+    volumes:
+      - filenest-data:/data
+  web:
+    build:
+      context: .
+      args:
+        BACKEND_URL: ${BACKEND_URL:-}
+    restart: unless-stopped
+    ports:
+      - "5000:80"
+    depends_on:
+      - backend
+volumes:
+  filenest-data:
