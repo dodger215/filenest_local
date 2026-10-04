@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.filenest.drive_rooms_flutter"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = "26.1.10909125"
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
